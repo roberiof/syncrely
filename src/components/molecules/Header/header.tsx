@@ -14,14 +14,14 @@ export default function Header({ styles } : HeaderProps) {
 		>
 			<Image
 				src={"/logo.svg"}
-				width={140}
-				height={140}
+				width={180}
+				height={180}
 				alt="logo"
 			/>
 
 
 
-			<nav className="glassBackground  text-primaryGrey rounded-xl font-extrabold text-sm  flex items-center">
+			<nav className="glassBackground hidden xl:flex text-primaryGrey rounded-xl font-extrabold text-sm items-center">
 				<a href="#our-process" className="px-6 py-3 hover:text-white"> Our Process</a>
 				<a href="#capabilities" className="px-6 py-3 hover:text-white"> Capabilities </a>
 				<a href="#work" className="px-6 py-3 hover:text-white"> Work </a>
