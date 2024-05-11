@@ -39,11 +39,15 @@ body * {
   transition: all 500ms;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 .glassBackground {
-  background: rgba(90,90,90,0.3);
+  background: rgba(41, 41, 41, 0.45);
   box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
-  backdrop-filter: blur(6.1px);
-  -webkit-backdrop-filter: blur(6.1px);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 
