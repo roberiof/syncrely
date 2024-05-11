@@ -1,16 +1,10 @@
-import React from "react";
+import React from 'react'
 
 interface ButtonProps {
-  children: string,
-  className?: string;
+  children: string
+  className?: string
 }
 
-export default function Button({ children, className } : ButtonProps) {
-	return(
-		<button
-			className={`flex ${className}`}
-		>
-			{children}
-		</button>
-	);
+export default function Button({ children, className }: ButtonProps) {
+  return <button className={`flex ${className}`}>{children}</button>
 }

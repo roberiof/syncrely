@@ -1,44 +1,74 @@
-import Image from "next/image";
-import React from "react";
+import React from 'react'
+import { wrapper } from '@/utils/wrapper'
+import Button from '@atoms/Button/button'
 
 export default function PostHero() {
-	return(
-		<>
-			<p className="text-4xl md:text-5xl lg:text-7xl 2xl:text-8xl text-primaryGrey py-96 w-11/12 max-w-[1300px] leading-tight m-auto">
-            Monthly <span className="font-semibold text-white">flat-rate</span> design subscription  <span className="font-semibold text-primaryGreen">∞</span>  <span className="font-semibold text-white">Unlimited</span> requests & revisions  <span className="font-semibold text-primaryPurple">→</span>  Pause or cancel <span className="font-semibold text-white">anytime</span>
-			</p>
+  return (
+    <div
+      style={wrapper}
+      className="py-[200px] bg-black/10 w-11/12 max-w-[1200px]"
+    >
+      <h2 className="text-[100px] block leading-none">
+        Projects <br /> at a Glance
+      </h2>
+      <div className="flex justify-between items-end">
+        <video
+          width="660"
+          height="460"
+          autoPlay
+          loop
+          style={{
+            width: 660,
+            height: 460,
+            overflow: 'hidden',
+            borderRadius: 32,
+            objectFit: 'cover',
+          }}
+        >
+          <source src="/videos/crea.mp4" type="video/mp4" />
+        </video>
 
-
-			<div className="logoSlideContainer py-96">
-				<Image
-					src="./logo.svg"
-					width={5300}
-					height={5300}
-					alt="logo"
-					className="logoSlideCell"
-				/>
-				<Image
-					src="./logo.svg"
-					width={5300}
-					height={5300}
-					alt="logo"
-					className="logoSlideCell ml-[600px]"
-				/>
-				<Image
-					src="./logo.svg"
-					width={5300}
-					height={5300}
-					alt="logo"
-					className="logoSlideCell ml-[600px]"
-				/>
-				<Image
-					src="./logo.svg"
-					width={5300}
-					height={5300}
-					alt="logo"
-					className="logoSlideCell ml-[600px]"
-				/>
-			</div>
-		</>
-	);
+        <video
+          width="500"
+          height="600"
+          autoPlay
+          loop
+          style={{
+            width: 500,
+            height: 600,
+            overflow: 'hidden',
+            borderRadius: 32,
+            objectFit: 'cover',
+          }}
+        >
+          <source src="/videos/bubbles.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div className="mt-[100px] flex items-center justify-center gap-16">
+        <video
+          width="500"
+          height="500"
+          autoPlay
+          loop
+          style={{
+            width: 500,
+            height: 500,
+            overflow: 'hidden',
+            borderRadius: 32,
+            objectFit: 'cover',
+          }}
+        >
+          <source src="/videos/mobiles.mp4" type="video/mp4" />
+        </video>
+        <div className="space-y-16">
+          <h2 className="text-[48px] font-medium">
+            Can&apos;t get enough? <br /> Get ready to see more
+          </h2>
+          <Button className="slideToLeftEffect rounded-[20px] px-24 py-5 text-2xl w-full flex justify-center lg:w-fit">
+            Selected Projects
+          </Button>
+        </div>
+      </div>
+    </div>
+  )
 }
