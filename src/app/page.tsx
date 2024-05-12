@@ -4,7 +4,8 @@ import PostHero from '@organisms/PostHero/postHero'
 import Process from '@organisms/Process/Process'
 import DesignCapabilities from '@organisms/DesignCapabilities/DesignCapabilities'
 import WhatOurClientsSay from '@organisms/WhatOurClientsSay/WhatOurClientsSay'
-import SelectedProjects from '@/components/organisms/SelectedProjects/SelectedProjects'
+import SelectedProjects from '@organisms/SelectedProjects/SelectedProjects'
+import About from '@organisms/About/About'
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <WhatOurClientsSay />
       <DesignCapabilities />
       <SelectedProjects />
+      <About />
     </main>
   )
 }
