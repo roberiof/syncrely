@@ -17,7 +17,7 @@ const config: Config = {
         primaryGreen: '#D2FF85',
         primaryPurple: '#B0A3FF',
         primaryGrey: '#99999a',
-        primaryBlack: '#0e0b0f',
+        primaryBlack: '#0C070C',
       },
     },
   },
