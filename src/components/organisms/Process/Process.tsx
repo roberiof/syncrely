@@ -24,7 +24,7 @@ const VerticalLine = () => {
 
 const Process = () => {
   return (
-    <section className="py-36 bg-white rounded-[32px] w-11/12 my-[56px] m-auto">
+    <section className="py-36 bg-white rounded-[32px] w-11/12 m-auto">
       <main className="pl-[5%] m-auto space-y-40">
         <h1 className="text-[#0c070c] text-[100px] w-full leading-none pr-[5%]">
           The world moves fast, we keep pace. Cut through the noise with{' '}

@@ -4,10 +4,7 @@ import Button from '@atoms/Button/button'
 
 export default function PostHero() {
   return (
-    <div
-      style={wrapper}
-      className="py-[200px] bg-black/10 w-11/12 max-w-[1200px]"
-    >
+    <div style={wrapper} className="w-11/12 max-w-[1200px]">
       <h2 className="text-[100px] block leading-none">
         Projects <br /> at a Glance
       </h2>
