@@ -6,6 +6,7 @@ import DesignCapabilities from '@organisms/DesignCapabilities/DesignCapabilities
 import WhatOurClientsSay from '@organisms/WhatOurClientsSay/WhatOurClientsSay'
 import SelectedProjects from '@organisms/SelectedProjects/SelectedProjects'
 import About from '@organisms/About/About'
+import Pricing from '@organisms/Pricing/Pricing'
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <DesignCapabilities />
       <SelectedProjects />
       <About />
+      <Pricing />
     </main>
   )
 }

@@ -16,7 +16,7 @@ export default function Hero() {
             We create mind-blowing visuals, brands, websites and products that
             help startups and innovative companies gain more exposure.
           </p>
-          <Button className="slideToLeftEffect rounded-[20px] px-24 py-5 text-2xl w-full flex justify-center lg:w-fit">
+          <Button className="slideToLeftEffect bg-primaryGreen after:bg-primaryPurple rounded-[20px] px-24 py-5 text-2xl w-full flex justify-center lg:w-fit">
             Start Today
           </Button>
         </div>

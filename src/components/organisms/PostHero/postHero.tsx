@@ -61,7 +61,7 @@ export default function PostHero() {
           <h2 className="text-[48px] font-medium">
             Can&apos;t get enough? <br /> Get ready to see more
           </h2>
-          <Button className="slideToLeftEffect rounded-[20px] px-24 py-5 text-2xl w-full flex justify-center lg:w-fit">
+          <Button className="slideToLeftEffect bg-primaryGreen after:bg-primaryPurple rounded-[20px] px-24 py-5 text-2xl w-full flex justify-center lg:w-fit">
             Selected Projects
           </Button>
         </div>
