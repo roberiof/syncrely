@@ -7,6 +7,7 @@ import WhatOurClientsSay from '@organisms/WhatOurClientsSay/WhatOurClientsSay'
 import SelectedProjects from '@organisms/SelectedProjects/SelectedProjects'
 import About from '@organisms/About/About'
 import Pricing from '@organisms/Pricing/Pricing'
+import Footer from '@organisms/Footer/Footer'
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <SelectedProjects />
       <About />
       <Pricing />
+      <Footer />
     </main>
   )
 }
