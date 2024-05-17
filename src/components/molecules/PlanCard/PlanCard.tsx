@@ -26,7 +26,7 @@ const PlanCard = ({ title, description, able, items, price }: Plan) => {
           <p>{items[1]}</p>
         </div>
         <Button
-          className={`w-full ${able} [&:not(:disabled)]:slideToLeftEffect bg-primaryPurple after:bg-white rounded-[20px] px-24 py-5 text-xl w-full flex justify-center font-medium text-black disabled:opacity-50 disabled:bg-[#2B262B] disabled:text-[#5c5c5c]`}
+          className={`w-full ${able && 'slideToLeftEffect'}  bg-primaryPurple after:bg-white rounded-[20px] px-24 py-5 text-xl w-full flex justify-center font-medium text-black disabled:opacity-50 disabled:bg-[#2B262B] disabled:text-[#5c5c5c]`}
           disabled={!able}
         >
           {able ? 'Book Into Call' : 'On Request'}

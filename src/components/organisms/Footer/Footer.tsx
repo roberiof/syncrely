@@ -29,7 +29,7 @@ const Footer = () => {
             </Link>
             <span className="mx-1">|</span>
             <Link href="#" className={linksStyles}>
-              LinkedIm
+              LinkedIn
             </Link>
           </div>
           <div className="flex flex-col">
