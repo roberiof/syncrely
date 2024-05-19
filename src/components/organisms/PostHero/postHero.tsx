@@ -13,6 +13,8 @@ export default function PostHero() {
           height="460"
           autoPlay
           loop
+          muted
+          playsInline
           className="lg:w-[600px] lg:h-[460px] overflow-hidden rounded-[32px] object-fill min-[1800px]:w-[800px] min-[1800px]:h-[500px]"
         >
           <source src="/videos/crea.mp4" type="video/mp4" />
@@ -23,6 +25,8 @@ export default function PostHero() {
           height="800"
           autoPlay
           loop
+          muted
+          playsInline
           className="lg:w-[500px] lg:h-[800px] overflow-hidden rounded-[32px] object-fill min-[1800px]:w-[600px] min-[1800px]:h-[750px]"
         >
           <source src="/videos/bubbles.mp4" type="video/mp4" />
@@ -34,6 +38,8 @@ export default function PostHero() {
           height="500"
           autoPlay
           loop
+          muted
+          playsInline
           className="lg:w-[500px] lg:h-[500px] overflow-hidden rounded-[32px] object-fill"
         >
           <source src="/videos/mobiles.mp4" type="video/mp4" />

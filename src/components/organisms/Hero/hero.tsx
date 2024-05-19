@@ -27,6 +27,9 @@ export default function Hero() {
           height="1000"
           autoPlay
           loop
+          muted
+          preload="auto"
+          playsInline
           style={{
             width: '100%',
             height: '100%',
