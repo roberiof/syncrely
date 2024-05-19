@@ -30,8 +30,8 @@ const Process = () => {
           The world moves fast, we keep pace. Cut through the noise with{' '}
           <span className="text-[#b0a3ff]">our process.</span>
         </h1>
-        <div className="flex justify-between text-[#0c070c]">
-          <div className="lg:w-1/2 flex gap-4 lg:gap-16 h-fit">
+        <div className="flex justify-between text-[#0c070c] relative">
+          <div className="lg:w-1/2 flex gap-4 lg:gap-16 h-fit z-20">
             <div className="flex flex-col items-center ">
               <StepNumber step={'01'} />
               <VerticalLine />
@@ -73,13 +73,13 @@ const Process = () => {
             </div>
           </div>
           <video
-            width="1050"
-            height="1400"
+            width="830"
+            height="1200"
             autoPlay
             loop
             muted
             playsInline
-            className="overflow-hidden object-cover w-[1050px] h-[1400px] hidden min-[1200px]:block -translate-y-10"
+            className="overflow-hidden object-cover w-[830px] h-[1200px] hidden min-[1200px]:block -translate-y-10 absolute bottom-0 right-0"
           >
             <source src="/videos/process.mp4" type="video/mp4" />
           </video>
