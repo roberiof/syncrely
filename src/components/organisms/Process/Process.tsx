@@ -77,6 +77,8 @@ const Process = () => {
             height="1400"
             autoPlay
             loop
+            muted
+            playsInline
             className="overflow-hidden object-cover w-[1050px] h-[1400px] hidden min-[1200px]:block -translate-y-10"
           >
             <source src="/videos/process.mp4" type="video/mp4" />
