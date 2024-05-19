@@ -1,26 +1,16 @@
 'use client'
-import Button from '@/components/atoms/Button/button'
 import Image from 'next/image'
-import React from 'react'
+import Button from '@atoms/Button/button'
 
-interface HeaderProps {
-  styles?: string
-}
-
-export default function Header({ styles }: HeaderProps) {
+export default function Header() {
   return (
     <header
-      className={`w-11/12 z-30 flex fixed right-1/2 translate-x-1/2 justify-between items-center py-4 ${styles}`}
+      className={`z-30 flex fixed right-1/2  translate-x-1/2 top-0 justify-between items-center py-4 mx-auto w-11/12  mix-blend-difference`}
     >
-      <Image
-        src={'/logo.svg'}
-        width={130}
-        height={100}
-        alt="logo"
-        className="object-contain"
-      />
-
-      <nav className="glassBackground hidden xl:flex text-[#d8d7d7] rounded-xl font-extrabold text-sm items-center">
+      <div className={`relative w-[80px] h-[80px] sm:w-[130px] sm:h-[100px]`}>
+        <Image src={'/logo.svg'} fill alt="logo" className="object-contain" />
+      </div>
+      <nav className="glassBackground hidden min-[1200px]:flex text-[#d8d7d7] rounded-xl font-extrabold text-sm items-center">
         <a href="#our-process" className="px-6 py-3 hover:text-white">
           {' '}
           Our Process
@@ -45,16 +35,16 @@ export default function Header({ styles }: HeaderProps) {
           {' '}
           FAQ{' '}
         </a>
-        <span className="border border-white opacity-10 h-1/2 mx-4"> </span>
-        <a href="#" className="px-6 py-3 hover:text-white">
-          {' '}
-          Login{' '}
-        </a>
       </nav>
-
-      <Button className="glassBackground px-6 py-3 rounded-lg items-center text-sm text-white font-semibold hover:text-black hover:bg-primaryGreen">
-        ✦ Book Intro Call
-      </Button>
+      <div className="flex gap-2 items-center">
+        <Button className="text-white/80">Login </Button>
+        <Button className="glassBackground px-4 sm:px-6 py-3 rounded-lg items-center text-sm text-white font-semibold hover:text-black hover:bg-primaryGreen flex gap-1 transition-all">
+          <>
+            <span className="hidden sm:inline">✦ </span>{' '}
+            <span>Book Intro Call</span>
+          </>
+        </Button>
+      </div>
     </header>
   )
 }

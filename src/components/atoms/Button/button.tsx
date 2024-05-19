@@ -1,7 +1,7 @@
 import React from 'react'
 
 interface ButtonProps {
-  children: string
+  children: React.ReactNode
   className?: string
   disabled?: boolean
 }
@@ -12,7 +12,7 @@ export default function Button({
   disabled = false,
 }: ButtonProps) {
   return (
-    <button className={`flex ${className}`} disabled={disabled}>
+    <button className={`flex font-medium ${className}`} disabled={disabled}>
       {children}
     </button>
   )

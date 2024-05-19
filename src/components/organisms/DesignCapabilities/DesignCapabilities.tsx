@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-import { wrapper } from '@/utils/wrapper'
 
 const DesignCapabilities = () => {
   const cards = [
@@ -54,11 +53,11 @@ const DesignCapabilities = () => {
 
   return (
     <section className="space-y-28">
-      <div style={wrapper} className="space-y-8">
-        <h1 className="text-[90px] leading-none">
-          Comprehensive ∞ <br /> Design Capabilities
+      <div className="space-y-8 w-11/12 max-w-[1200px] min-[1800px]:max-w-[1600px] mx-auto">
+        <h1 className="text-[35px] md:text-[50px] lg:text-[90px] min-[1800px]:text-[120px] leading-none">
+          Comprehensive ∞ <br className="hidden sm:block" /> Design Capabilities
         </h1>
-        <p className="text-[20px] max-w-[1100px]">
+        <p className="sm:text-[20px] max-w-[1100px]">
           We are experts in crafting bold visuals, distinctive brand identities,
           innovative products, and immersive websites. Whether you want to
           elevate your company&apos;s visual language, build an MVP, or explore
@@ -69,27 +68,30 @@ const DesignCapabilities = () => {
         {cards.map((card) => (
           <div
             key={card.title}
-            className="rounded-[36px] py-[120px] px-20 border-[#3e393e] border flex flex-col gap-8 items-end w-full justify-between"
+            className="rounded-[36px] p-10 sm:py-[120px] px-8 sm:px-20 border-[#3e393e] border flex flex-col gap-4 sm:gap-8 items-end w-full justify-between"
             style={{
               background:
                 'linear-gradient(rgb(17, 14, 17) 0%, rgb(11, 7, 11) 100%)',
             }}
           >
-            <div className="flex w-full items-center">
-              <h3 className="w-1/2 text-[70px]">{card.title}</h3>
+            <div className="flex w-full sm:items-center flex-col sm:flex-row gap-y-16 sm:gap-y-0">
+              <h3 className="w-full sm:w-1/2 text-[40px] sm:text-[50px] md:text-[70px] order-2">
+                {card.title}
+              </h3>
               <Image
                 src={card.image}
                 width={150}
                 height={150}
                 alt="Card image"
+                className="order-1"
               />
             </div>
-            <div className="w-1/2">
+            <div className="w-full sm:w-1/2">
               {' '}
-              <span className="flex gap-3 flex-wrap text-[20px]">
+              <span className="flex gap-1 sm:gap-3 flex-wrap text-sm sm:text-[20px]">
                 {card.items.map((item, key) =>
                   card.items.indexOf(item) !== card.items.length - 1 ? (
-                    <p key={key} className="flex gap-3">
+                    <p key={key} className="flex gap-1 sm:gap-3">
                       <span>{item}</span> <span>•</span>{' '}
                     </p>
                   ) : (

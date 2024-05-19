@@ -22,7 +22,7 @@ const SelectedProjects = () => {
   return (
     <section className="w-full">
       <div className="w-11/12 mx-auto">
-        <h3 className="text-[48px] w-11/12 mx-auto pb-6">
+        <h3 className="text-[30px] sm:text-[48px] w-11/12 mx-auto pb-6">
           <span className="text-primaryGreen">✦ </span>
           <span>Selected Projects</span>
         </h3>

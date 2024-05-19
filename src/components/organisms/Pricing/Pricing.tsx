@@ -44,14 +44,14 @@ const Pricing = () => {
   return (
     <section className="space-y-16">
       <div className="text-center">
-        <h1 className="text-[90px]">Pricing</h1>
-        <p className="text-[20px]">
+        <h1 className="text-[50px] lg:text-[90px]">Pricing</h1>
+        <p className="sm:text-[20px] w-[90%] mx-auto">
           To ensure we deliver top-tier quality designs on time, we work with a
           limited number of clients.
         </p>
       </div>
 
-      <div className="flex gap-8 justify-center">
+      <div className="flex gap-y-8 justify-center flex-col xl:flex-row max-w-[1400px] mx-auto">
         {plans.map((item) => (
           <PlanCard {...item} key={item.title} />
         ))}

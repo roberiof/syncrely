@@ -11,7 +11,7 @@ import Footer from '@organisms/Footer/Footer'
 
 export default function Home() {
   return (
-    <main className="bg-primaryBlack min-h-screen flex flex-col gap-y-[250px]">
+    <main className="bg-primaryBlack min-h-screen flex flex-col gap-y-[100px] sm:gap-y-[250px]">
       <Hero />
       <PostHero />
       <Process />

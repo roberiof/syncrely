@@ -6,15 +6,15 @@ import { ArrowUp } from 'lucide-react'
 const Footer = () => {
   const linksStyles = ' hover:text-primaryGreen text-[#B1B1B1]'
   return (
-    <footer className="text-[#B1B1B1] w-11/12 m-auto flex gap-16 mb-16">
+    <footer className="text-[#B1B1B1] w-11/12 m-auto flex gap-16 mb-16 flex-col lg:flex-row">
       <button
-        className="rounded-full text-white border-white border hover:bg-white hover:text-black h-[120px] w-[80px] flex justify-center items-center"
+        className="rounded-full text-white border-white border hover:bg-white hover:text-black h-[120px] w-[80px] flex justify-center items-center transition-all"
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
       >
         <ArrowUp size={30} />
       </button>
-      <div className="flex justify-between w-full">
-        <div className="flex justify-between flex-col">
+      <div className="flex justify-between w-full flex-col lg:flex-row gap-y-8">
+        <div className="flex justify-between flex-col gap-y-4">
           <div>
             <Link href="#" className={linksStyles}>
               Twitter

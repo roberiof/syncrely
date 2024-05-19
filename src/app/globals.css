@@ -35,9 +35,6 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-body * {
-  transition: all 500ms;
-}
 
 ::-webkit-scrollbar {
   display: none;
