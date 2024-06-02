@@ -20,7 +20,7 @@ This project is a clone of one of the winning websites exposed in the the [Awwar
 
 <br> 
 
-Acesse the official website: [Syncrely](https://www.syncrely.com/)
+Access the official website: [Syncrely](https://www.syncrely.com/)
 
 <br> 
 
