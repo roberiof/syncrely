@@ -33,6 +33,7 @@ Access the official website: [Syncrely](https://www.syncrely.com/)
 <br> 
 
 ## 🎯 Next Steps 
-* Make videos load more fast 
+* Make videos load more fast
+* Add animation Process Section
 
 
