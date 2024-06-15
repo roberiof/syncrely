@@ -30,3 +30,9 @@ Access the official website: [Syncrely](https://www.syncrely.com/)
 * **[ Tailwind CSS ](https://styled-components.com/)**
 * **[ Framer Motion ](https://www.npmjs.com/package/json-server)**
 
+<br> 
+
+## 🎯 Next Steps 
+* Make videos load more fast 
+
+
